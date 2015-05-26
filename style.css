@@ -1,0 +1,346 @@
+/**
+ * Default Stylesheet
+ *
+ * This stylesheet defines the styles for the entire site.
+ *
+ * @author Matt Beall
+ * @since 0.0.1
+ */
+
+/* =Global
+----------------------------------------------- */
+body {
+  padding-top: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  background-color: f8f8f8;
+}
+h1, h2, h3,
+h4, h5, h6,
+.h1, .h2, .h3,
+.h4, .h5, .h6 {
+  font-weight: 400;
+}
+a {
+  color: #404040;
+}
+a:hover,
+a:focus {
+  color: #333;
+}
+blockquote {
+  border-left-color: #e8e8e8;
+}
+.canvas {
+  color: #fff;
+  background-color: #404040;
+  border-color: #333;
+}
+.canvas a, .canvas-light a {
+  color: #333;
+}
+.canvas a:hover,
+.canvas-light a:hover {
+  color: #fff;
+}
+.site-branding a,
+.site-branding a:hover {
+  color: #fff;
+}
+.canvas-light {
+  color: #fff;
+  background: #44ce00;
+}
+
+
+/* Alignment */
+
+
+/* =Header
+----------------------------------------------- */
+
+.site-branding .tagline {
+  font-size: 32px;
+}
+.description {
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+  .site-branding .tagline {
+    font-size: 48px;
+  }
+  .description {
+    font-size: 24px;
+  }
+}
+.stripe {
+  background: #f8f8f8;
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+}
+.stripe p {
+  margin-bottom: 0;
+  font-size: 32px;
+  line-height: 2em;
+  color: #555;
+}
+.home .stripe p {
+  font-size: 24px;
+  text-align: center;
+}
+.stripe .nav {
+  margin-top: 18px;
+  line-height: 2em;
+}
+
+
+/* =Content
+----------------------------------------------- */
+.page .entry-content {
+  margin: 0;
+}
+.entry-title {
+  display: none;
+}
+.page-header {
+  margin-top: 0;
+  font-size: 2.5em;
+  font-weight: 600;
+}
+section {
+  margin-bottom: 40px;
+}
+
+
+/* =Media
+----------------------------------------------- */
+
+
+
+/* =Navigation
+----------------------------------------------- */
+.navbar {
+  min-height: 70px;
+  margin-bottom: 0;
+}
+.navbar-canvas {
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+}
+.navbar-canvas .navbar-brand {
+  height: 70px;
+  color: #777;
+}
+.navbar-canvas .navbar-brand:hover,
+.navbar-canvas .navbar-brand:focus {
+  color: #5e5e5e;
+  background-color: transparent;
+}
+.navbar-canvas .navbar-text {
+  color: #777;
+}
+.navbar-canvas .navbar-nav > li > a {
+  color: #777;
+}
+.navbar-canvas .navbar-nav > li > a:hover,
+.navbar-canvas .navbar-nav > li > a:focus {
+  color: #333;
+  background-color: transparent;
+}
+.navbar-canvas .navbar-nav > .active > a,
+.navbar-canvas .navbar-nav > .active > a:hover,
+.navbar-canvas .navbar-nav > .active > a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+}
+.navbar-canvas .navbar-nav > .disabled > a,
+.navbar-canvas .navbar-nav > .disabled > a:hover,
+.navbar-canvas .navbar-nav > .disabled > a:focus {
+  color: #ccc;
+  background-color: transparent;
+}
+.navbar-canvas .navbar-toggle {
+  margin-top: 18px;
+  margin-bottom: 18px;
+  border-color: #ddd;
+}
+.navbar-canvas .navbar-toggle:hover,
+.navbar-canvas .navbar-toggle:focus {
+  background-color: #ddd;
+}
+.navbar-canvas .navbar-toggle .icon-bar {
+  background-color: #888;
+}
+.navbar-canvas .navbar-collapse,
+.navbar-canvas .navbar-form {
+  border-color: #e7e7e7;
+}
+.navbar-canvas .navbar-nav > .open > a,
+.navbar-canvas .navbar-nav > .open > a:hover,
+.navbar-canvas .navbar-nav > .open > a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+}
+@media (max-width: 767px) {
+  .navbar-canvas .navbar-nav .open .dropdown-menu > li > a {
+    color: #777;
+  }
+  .navbar-canvas .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-canvas .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #333;
+    background-color: transparent;
+  }
+  .navbar-canvas .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-canvas .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-canvas .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+  }
+  .navbar-canvas .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-canvas .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-canvas .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+  }
+}
+.navbar-canvas .navbar-link {
+  color: #777;
+}
+.navbar-canvas .navbar-link:hover {
+  color: #333;
+}
+.navbar-canvas .btn-link {
+  color: #777;
+}
+.navbar-canvas .btn-link:hover,
+.navbar-canvas .btn-link:focus {
+  color: #333;
+}
+.navbar-canvas .btn-link[disabled]:hover,
+fieldset[disabled] .navbar-canvas .btn-link:hover,
+.navbar-canvas .btn-link[disabled]:focus,
+fieldset[disabled] .navbar-canvas .btn-link:focus {
+  color: #ccc;
+}
+.navbar-canvas img {
+  width: auto;
+  max-height: 45px;
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px ) {
+  .navbar {
+    min-height: 90px;
+  }
+  .navbar-canvas .navbar-brand {
+    height: 90px;
+  }
+  .navbar-canvas .navbar-nav,
+  .navbar-canvas .navbar-right {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .navbar-canvas img {
+    max-height: 65px;
+  }
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px ) {
+  .navbar {
+    min-height: 100px;
+  }
+  .navbar-canvas .navbar-brand {
+    height: 100px;
+  }
+  .navbar-canvas .navbar-nav,
+  .navbar-canvas .navbar-right {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .navbar-canvas img {
+    max-height: 75px;
+  }
+}
+
+/* =Comments
+----------------------------------------------- */
+
+
+/* =Widgets
+----------------------------------------------- */
+
+
+/* =Footer
+----------------------------------------------- */
+
+.site-footer {
+  min-height: 60px;
+  color: #777;
+  background-color: #f8f8f8;
+  border-top: 1px solid #e7e7e7;
+}
+#credits {
+  font-size: 14px;
+  text-align: center;
+}
+#footer-left {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+
+/* =Affix
+----------------------------------------------- */
+.nav-side {
+}
+.nav-side li {
+  border-left: 2px solid transparent;
+}
+.nav-side li.active {
+  border-left: 2px solid #1aa579;
+}
+
+
+/* =Buttons
+----------------------------------------------- */
+
+.btn-primary {
+  color: #fff;
+  background-color: #404040;
+  border-color: #333;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #272727;
+  border-color: #151515;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  background-image: none;
+}
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+  background-color: #404040;
+  border-color: #333;
+}
+.btn-primary .badge {
+  color: #404040;
+  background-color: #fff;
+}
